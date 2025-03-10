@@ -1,0 +1,44 @@
+20:29:40.678 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Validate error message
+20:29:40.682 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+20:29:40.687 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality started **
+20:29:46.100 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Credentials are entered
+20:29:46.114 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Validate page url
+20:29:46.114 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Login successfull
+20:29:46.219 [main] INFO  testCases.TC001_VerifyLoginFunctionality - clicked on Open Menu
+20:29:46.429 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Successfully Logout
+20:29:46.429 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Validate successful
+20:29:46.429 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+20:29:46.440 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality started **
+20:29:46.973 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Credentials are entered
+20:29:46.987 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Validate page url
+20:29:46.987 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Login successfull
+20:29:47.056 [main] INFO  testCases.TC001_VerifyLoginFunctionality - clicked on Open Menu
+20:29:47.239 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Successfully Logout
+20:29:47.240 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Validate successful
+20:29:47.240 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+20:29:47.248 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality started **
+20:29:47.666 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Credentials are entered
+20:29:47.674 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Validate page url
+20:29:47.674 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Login successfull
+20:29:47.770 [main] INFO  testCases.TC001_VerifyLoginFunctionality - clicked on Open Menu
+20:29:47.958 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Successfully Logout
+20:29:47.958 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Validate successful
+20:29:47.958 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+20:29:47.966 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality started **
+20:29:48.576 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Credentials are entered
+20:29:48.627 [main] INFO  testCases.TC001_VerifyLoginFunctionality - actualResultEpic sadface: Username is required
+20:29:48.627 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Validate error message
+20:29:48.627 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+20:29:48.643 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality started **
+20:29:49.285 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Credentials are entered
+20:30:09.360 [main] INFO  testCases.TC001_VerifyLoginFunctionality - actualResultno such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='error-message-container error']"}
+  (Session info: chrome=134.0.6998.35)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8124b683761afa7f0b739aa671be96e3, findElement {value=//div[@class='error-message-container error'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.35, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63801}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63801/devtoo..., se:cdpVersion: 134.0.6998.35, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8124b683761afa7f0b739aa671be96e3
+20:30:09.360 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Validate error message
+20:30:09.392 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality started **

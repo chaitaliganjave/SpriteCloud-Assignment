@@ -1,0 +1,44 @@
+20:29:38.257 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:29:38.260 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:29:38.261 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:29:38.271 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:29:38.272 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:29:38.273 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:29:38.284 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:29:38.284 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:29:38.285 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:29:38.295 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:29:38.295 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:29:38.296 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:29:38.308 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:29:38.309 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:29:38.309 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:29:38.320 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:29:38.321 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:29:38.321 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:29:38.346 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality started **
+20:29:38.743 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Credentials are entered
+20:29:38.754 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Validate page url
+20:29:38.754 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Login successfull
+20:29:38.833 [main] INFO  testCases.TC001_VerifyLoginFunctionality - clicked on Open Menu
+20:29:38.986 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Successfully Logout
+20:29:38.989 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Validate successful
+20:29:38.990 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+20:29:38.994 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality started **
+20:29:39.328 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Credentials are entered
+20:29:39.366 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Validate error message
+20:29:39.366 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+20:29:39.368 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality started **
+20:29:39.690 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Credentials are entered
+20:29:39.720 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Validate error message
+20:29:39.721 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+20:29:39.723 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality started **
+20:29:39.998 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Credentials are entered
+20:29:40.005 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Validate page url
+20:29:40.005 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Login successfull
+20:29:40.049 [main] INFO  testCases.TC001_VerifyLoginFunctionality - clicked on Open Menu
+20:29:40.255 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Successfully Logout
+20:29:40.255 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Validate successful
+20:29:40.255 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+20:29:40.261 [main] INFO  testCases.TC001_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality started **
+20:29:40.653 [main] INFO  testCases.TC001_VerifyLoginFunctionality - Credentials are entered

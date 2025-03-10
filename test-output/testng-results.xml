@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="9" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-10T20:29:34 CET" name="Suite" finished-at="2025-03-10T20:30:29 CET" duration-ms="55129">
+    <groups>
+    </groups>
+    <test started-at="2025-03-10T20:29:34 CET" name="Test" finished-at="2025-03-10T20:30:29 CET" duration-ms="55129">
+      <class name="testCases.TC001_VerifyLoginFunctionality">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_VerifyLoginFunctionality@6865c751]" started-at="2025-03-10T20:29:34 CET" name="setUp" finished-at="2025-03-10T20:29:36 CET" duration-ms="2318" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_LoginCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_VerifyLoginFunctionality@6865c751]" started-at="2025-03-10T20:29:38 CET" name="verify_LoginCredentials" data-provider="Logindata" finished-at="2025-03-10T20:29:38 CET" duration-ms="652" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://www.saucedemo.com/inventory.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_LoginCredentials -->
+        <test-method signature="verify_LoginCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_VerifyLoginFunctionality@6865c751]" started-at="2025-03-10T20:29:38 CET" name="verify_LoginCredentials" data-provider="Logindata" finished-at="2025-03-10T20:29:39 CET" duration-ms="374" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Epic sadface: Sorry, this user has been locked out.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_LoginCredentials -->
+        <test-method signature="verify_LoginCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_VerifyLoginFunctionality@6865c751]" started-at="2025-03-10T20:29:39 CET" name="verify_LoginCredentials" data-provider="Logindata" finished-at="2025-03-10T20:29:39 CET" duration-ms="353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InvalidUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[demo123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_LoginCredentials -->
+        <test-method signature="verify_LoginCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_VerifyLoginFunctionality@6865c751]" started-at="2025-03-10T20:29:39 CET" name="verify_LoginCredentials" data-provider="Logindata" finished-at="2025-03-10T20:29:40 CET" duration-ms="533" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://www.saucedemo.com/inventory.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_LoginCredentials -->
+        <test-method signature="verify_LoginCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_VerifyLoginFunctionality@6865c751]" started-at="2025-03-10T20:29:40 CET" name="verify_LoginCredentials" data-provider="Logindata" finished-at="2025-03-10T20:29:40 CET" duration-ms="426" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InvalidPassword]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[demopass]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_LoginCredentials -->
+        <test-method signature="verify_LoginCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_VerifyLoginFunctionality@6865c751]" started-at="2025-03-10T20:29:40 CET" name="verify_LoginCredentials" data-provider="Logindata" finished-at="2025-03-10T20:29:46 CET" duration-ms="5744" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://www.saucedemo.com/inventory.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_LoginCredentials -->
+        <test-method signature="verify_LoginCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_VerifyLoginFunctionality@6865c751]" started-at="2025-03-10T20:29:46 CET" name="verify_LoginCredentials" data-provider="Logindata" finished-at="2025-03-10T20:29:47 CET" duration-ms="805" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[error_user]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://www.saucedemo.com/inventory.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_LoginCredentials -->
+        <test-method signature="verify_LoginCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_VerifyLoginFunctionality@6865c751]" started-at="2025-03-10T20:29:47 CET" name="verify_LoginCredentials" data-provider="Logindata" finished-at="2025-03-10T20:29:47 CET" duration-ms="715" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[visual_user]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://www.saucedemo.com/inventory.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_LoginCredentials -->
+        <test-method signature="verify_LoginCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_VerifyLoginFunctionality@6865c751]" started-at="2025-03-10T20:29:47 CET" name="verify_LoginCredentials" data-provider="Logindata" finished-at="2025-03-10T20:29:48 CET" duration-ms="668" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BlankUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Epic sadface: Username is required]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_LoginCredentials -->
+        <test-method signature="verify_LoginCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_VerifyLoginFunctionality@6865c751]" started-at="2025-03-10T20:29:48 CET" name="verify_LoginCredentials" data-provider="Logindata" finished-at="2025-03-10T20:30:09 CET" duration-ms="20749" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BlankPassword]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[visual_user]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Epic sadface: Password is required]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Epic sadface: Password is required] but found [no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='error-message-container error']"}
+  (Session info: chrome=134.0.6998.35)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8124b683761afa7f0b739aa671be96e3, findElement {value=//div[@class='error-message-container error'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.35, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63801}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63801/devtoo..., se:cdpVersion: 134.0.6998.35, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8124b683761afa7f0b739aa671be96e3]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Epic sadface: Password is required] but found [no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='error-message-container error']"}
+  (Session info: chrome=134.0.6998.35)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8124b683761afa7f0b739aa671be96e3, findElement {value=//div[@class='error-message-container error'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.35, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63801}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63801/devtoo..., se:cdpVersion: 134.0.6998.35, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8124b683761afa7f0b739aa671be96e3]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testCases.TC001_VerifyLoginFunctionality.verify_LoginCredentials(TC001_VerifyLoginFunctionality.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_LoginCredentials -->
+        <test-method signature="verify_LoginCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_VerifyLoginFunctionality@6865c751]" started-at="2025-03-10T20:30:09 CET" name="verify_LoginCredentials" data-provider="Logindata" finished-at="2025-03-10T20:30:29 CET" duration-ms="20058" status="FAIL">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at testCases.TC001_VerifyLoginFunctionality.verify_LoginCredentials(TC001_VerifyLoginFunctionality.java:82)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_LoginCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_VerifyLoginFunctionality@6865c751]" started-at="2025-03-10T20:30:29 CET" name="tearDown" finished-at="2025-03-10T20:30:29 CET" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC001_VerifyLoginFunctionality -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
