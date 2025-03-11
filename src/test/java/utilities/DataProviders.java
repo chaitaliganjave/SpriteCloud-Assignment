@@ -9,7 +9,7 @@ public class DataProviders {
 	@DataProvider(name = "Logindata")
 	public String[][] getData() throws IOException
 	{
-		String path=".\\testData\\LoginTestdata.xlsx"; //taking excel file from testdata
+		String path=".\\testData\\TestDataLogin.xlsx"; //taking excel file from testdata
 		ExcelUtility xlutil=new ExcelUtility(path); //creating an object for ExcelUtility
 		
 		int totalrows=xlutil.getRowCount("Credentials"); //get the total row count from excel

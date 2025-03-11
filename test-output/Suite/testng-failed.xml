@@ -8,7 +8,7 @@
       <class name="testCases.TC001_VerifyLoginFunctionality">
         <methods>
           <include name="tearDown"/>
-          <include name="verify_LoginCredentials" invocation-numbers="9 10"/>
+          <include name="verify_LoginCredentials" invocation-numbers="9"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- testCases.TC001_VerifyLoginFunctionality -->
