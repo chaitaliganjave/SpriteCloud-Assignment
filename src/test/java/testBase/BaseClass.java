@@ -1,12 +1,18 @@
 package testBase;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.Properties;
+import java.util.UUID;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -17,17 +23,17 @@ import org.testng.annotations.Parameters;
 
 public class BaseClass {
 
-	public WebDriver driver;
+	public static WebDriver driver;
 	public Logger logger; // For Log4j
-	public Properties p; //to access commonly used data from config.properties file
+	public Properties p; // to access commonly used data from config.properties file
 
 	@Parameters({ "os", "browser" })
 	@BeforeClass
-	public void setUp(String os, String br) throws IOException {
+	public void setUp(String os, String browser) throws IOException {
 
 		logger = LogManager.getLogger(this.getClass()); // For Log4j
 
-		switch (br.toLowerCase()) {
+		switch (browser.toLowerCase()) {
 		case "chrome":
 			driver = new ChromeDriver();
 			break;
@@ -41,17 +47,16 @@ public class BaseClass {
 			System.out.println("Invalid Browser");
 			return;
 		}
-		
+
 		FileReader file = new FileReader("./src//test//resources/config.properties");
-		 p = new Properties();
-		 p.load(file);
+		p = new Properties();
+		p.load(file);
 
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
-		driver.get(p.getProperty("url")); //reading url from properties file
+		driver.get(p.getProperty("url")); // reading url from properties file
 		driver.manage().window().maximize();
-
 	}
 
 	@AfterClass
@@ -59,22 +64,28 @@ public class BaseClass {
 		driver.quit();
 	}
 
-	/*
-	 * public String randomString() { String generatedString = new
-	 * RandomStringUtils().randomAlphabetic(7); return generatedString;
-	 * 
-	 * }
-	 * 
-	 * public String randomNumber() { String generatedNumber = new
-	 * RandomStringUtils().randomAlphanumeric(10); return generatedNumber;
-	 * 
-	 * }
-	 * 
-	 * public String randomAlphaNumeric() { String generatedNumber = new
-	 * RandomStringUtils().randomAlphanumeric(3); String generatedString = new
-	 * RandomStringUtils().randomAlphabetic(5); return (generatedNumber + "@" +
-	 * generatedString);
-	 * 
-	 * }
-	 */
+	public String randomString() {
+		UUID randomUUID = UUID.randomUUID();
+		return randomUUID.toString().substring(0, 5).toUpperCase();
+	}
+
+	// Method to generate random 5 AlphaNumeric characters
+	public String randomAlphaNumeric() {
+		UUID randomUUID = UUID.randomUUID();
+		return randomUUID.toString().substring(0, 5).toUpperCase();
+	}
+
+	public String captureScreen(String tname) {
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date()); // Create date and time
+																							// Format
+		TakesScreenshot ts = (TakesScreenshot) driver;
+
+		File sourceFile = ts.getScreenshotAs(OutputType.FILE);
+
+		String targetFilePath = System.getProperty("user.dir") + "\\screenshots\\" + tname + "_" + timeStamp + ".png";
+		File targetFile = new File(targetFilePath);
+
+		sourceFile.renameTo(targetFile);
+		return targetFilePath;
+	}
 }

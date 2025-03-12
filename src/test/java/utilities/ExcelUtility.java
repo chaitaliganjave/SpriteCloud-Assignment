@@ -27,7 +27,7 @@ public class ExcelUtility {
 	//creating a common constructor so that we don't have to use xlfile path everywhere, we can directly pass the path variable into method
 	public ExcelUtility(String path) {
 		// TODO Auto-generated constructor stub
-		this.path = path;
+	this.path = path;
 
 	}
 
