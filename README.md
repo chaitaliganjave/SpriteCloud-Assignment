@@ -62,7 +62,60 @@ An automatic test report is generated when test excecution is completed. ExtentR
    - Method: GET
    - Description: This test case retrieves a list of users from the second page.
    - Validation:
-      
-     1. Verify that the response status code is 200 OK.
-     2. Ensure that the response contains a list of users.
-     3. Validate that the per_page and total fields in the response match the expected values.
+     1. Verify that the response status code is 200.
+     2. Verify that the response time is less than 200ms
+     3. Verify that the user list is not empty.
+     4. Validate that the per_page and total fields in the response match the expected values.
+     5. Validate that the response matches the simplified JSON schema defined in Post-response Scripts.
+
+2. Perform a successful login:
+
+   - Endpoint: /api/login
+   - Method: POST
+   - Description: This test case performs a successful login using valid credentials.
+   - Validation:
+     1. Verify that the response status code is 200.
+     2. Verify that the token is present.
+
+3. Perform an update:
+
+   - Endpoint: /api/users/{{user_id}}
+   - Method: PUT
+   - Description: This test case updates the details of a user present in environment variable user_id.
+   - Validation:
+     1. Verify that the response status code is 200.
+     2. Verify that the response contains the updated name and job fields.
+
+4. Perform a deletion:
+
+   - Endpoint: /api/users/{{user_id}}
+   - Method: DELETE
+   - Description: This test case deletes a user present in environment variable user_id.
+   - Validation:
+     1. Verify that the response status code is 204.
+
+5.1 Execute 2 negative scenarios - Invalid Login:
+
+   - Endpoint: /api/login
+   - Method: POST
+   - Description: This test case attempts to log in with invalid credentials.
+   - Validation:
+     1. Verify that the response status code is 400.
+
+5.2 Execute 2 negative scenarios - Invalid User:
+
+   - Endpoint: /api/users/100
+   - Method: GET
+   - Description: This test case attempts to get invalid user.
+   - Validation:
+     1. Verify that the response status code is 404.
+
+6. Execute a parameterized delayed request (max 3 seconds) and evaluate how long the request takes:
+
+   - Endpoint: /api/users?delay={{delay_time}}
+   - Method: GET
+   - Description: This test case retrieves a list of users with a delay of up to 3 seconds.
+   - Validation:
+     1. Validate response time is less than 3 seconds.
+     2. Verify that the response status code is 200.
+     3. Validate data exists in response body.
