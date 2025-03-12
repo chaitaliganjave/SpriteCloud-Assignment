@@ -1,6 +1,6 @@
 # SpriteCloud Assignment
 
-This project contains two folders. The UI Testing folder contains the automated test cases for https://www.saucedemo.com using Selenium and Java. TestNG was used to perform automated tests. The API Testing folder contains a postman collection which has test cases to test various APIs of https://reqres.in/
+This project has solution to two challenges given by SpriteCloud. The UI Testing solution contains the automated test cases for https://www.saucedemo.com using Selenium and Java. TestNG was used to perform automated tests. The API Testing solution present inside "API Testing" folder contains a postman collection which has test cases to test various APIs of https://reqres.in/
 
 ## UI Testing Solution
 
@@ -47,6 +47,10 @@ The automated UI tests cover the following scenarios:
      
     - The test case uses a data provider (DataProviders.class) and an excel utility (ExcelUtility.Class) to fetch test data from an excel sheet. (Referred Youtube videos for excel utility)
    
+### Test Execution
+
+All the above 3 test cases were first successfully executed on local machine. After pushing the code to gitHub repository, Jenkins pipeline was executed successfully and it's evidence is stored under reports/JenkinsScreenshots folder. The latest test report inisde reports folder is the one generated from Jenkins.
+
 ### Test Reports
 
 An automatic test report is generated when test excecution is completed. ExtentReports is used to generate test reports. Test reports are available in "reports" folder. And screenshots of failed test cases are stored in "screenshots" folder. (Referred Youtube videos for this)
