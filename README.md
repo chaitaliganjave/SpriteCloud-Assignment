@@ -12,7 +12,8 @@ The automated UI tests cover the following scenarios:
 ### Test Cases Implemented
 
 1. TC001_VerifyCheckoutFlow:
-   -Steps:
+
+   - Steps
    1. Login with valid credentials.
    2. Check if login is successful, inventory page is visible, add 2 products to cart, and click on cart.
    3. Click on checkout.
@@ -20,3 +21,5 @@ The automated UI tests cover the following scenarios:
    5. Validate that the final price is same as the expected final price. Click on Finish.
    7. Check if "Checkout-Complete Page" is visible.
 
+   -Assumptions
+   In the website, a tax was added to the total price of products. According to my calculations it is 8%. So, a tax of 8% is added while validating the final price.
