@@ -94,7 +94,7 @@ An automatic test report is generated when test excecution is completed. ExtentR
    - Validation:
      1. Verify that the response status code is 204.
 
-5.1 Execute 2 negative scenarios - Invalid Login:
+5. A. Execute 2 negative scenarios - Invalid Login:
 
    - Endpoint: /api/login
    - Method: POST
@@ -102,7 +102,7 @@ An automatic test report is generated when test excecution is completed. ExtentR
    - Validation:
      1. Verify that the response status code is 400.
 
-5.2 Execute 2 negative scenarios - Invalid User:
+5. B. Execute 2 negative scenarios - Invalid User:
 
    - Endpoint: /api/users/100
    - Method: GET
