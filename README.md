@@ -24,3 +24,12 @@ The automated UI tests cover the following scenarios:
  
    - Assumptions
        1. In the website, a tax was added to the total price of products. According to my calculations it is 8%. So, a tax of 8% is added while validating the final price.
+
+
+2. TC002_VerifySortedProducts:
+   
+   - Steps
+       1. Login with valid credentials.
+       2. Check if login is successful and inventory page is visible.
+       3. Click on Sort products by Name Z-A.
+       4. Validate that the sorting is correct.
