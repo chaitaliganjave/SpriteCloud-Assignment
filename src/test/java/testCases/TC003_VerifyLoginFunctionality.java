@@ -15,43 +15,46 @@ public class TC003_VerifyLoginFunctionality extends BaseClass {
 		logger.info("** TC003_VerifyLoginFunctionality Started **");
 		try {
 			LoginPage loginPage = new LoginPage(driver);
-			InventoryPage ip = new InventoryPage(driver);
-
+			InventoryPage inventoryPage = new InventoryPage(driver);
 			loginPage.enterCredentialsAndLogin(username, password);
+
 			logger.info("Credentials entered");
+
 			if (type.equalsIgnoreCase("Valid")) {
 				String actualUrl = loginPage.getCurrentPageURL();
 				logger.info("Validate page url");
-				logger.info("Login successfull");
 				Assert.assertEquals(actualUrl, result);
-				logger.info("Validation successful");
-				ip.clickOpenMenu();
+				logger.info("Page url validation successful");
+				logger.info("Login successful");
+				inventoryPage.clickOpenMenu();
 				logger.info("clicked on Open Menu");
-				ip.clickLogout();
-				logger.info("Successfully Logout");
-				
+				inventoryPage.clickLogout();
+				logger.info("Logout successful");
 			} else if (type.equalsIgnoreCase("invalid")) {
 				String actualResult = loginPage.getErrorMessage(result);
 				logger.info("Validate error message");
 				Assert.assertEquals(actualResult, result);
+				logger.info("Error message validation successful");
 			} else if (type.equalsIgnoreCase("InvalidUsername")) {
 				String actualResult = loginPage.getErrorMessage(result);
 				logger.info("Validate error message");
 				Assert.assertEquals(actualResult, result);
+				logger.info("Error message validation successful");
 			} else if (type.equalsIgnoreCase("InvalidPassword")) {
 				String actualResult = loginPage.getErrorMessage(result);
 				logger.info("Validate error message");
 				Assert.assertEquals(actualResult, result);
+				logger.info("Error message validation successful");
 			} else if (type.equalsIgnoreCase("BlankUsername")) {
 				String actualResult = loginPage.getErrorMessage(result);
-				logger.info("actualResult" + actualResult);
 				logger.info("Validate error message");
 				Assert.assertEquals(actualResult, result);
+				logger.info("Error message validation successful");
 			} else if (type.equalsIgnoreCase("BlankPassword")) {
 				String actualResult = loginPage.getErrorMessage(result);
-				logger.info("actualResult" + actualResult);
 				logger.info("Validate error message");
 				Assert.assertEquals(actualResult, result);
+				logger.info("Error message validation successful");
 			} else {
 				logger.info("Type not matched");
 			}

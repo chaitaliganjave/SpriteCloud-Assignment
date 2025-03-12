@@ -8,13 +8,13 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC003_VerifyLoginFunctionality">
+      <class name="testCases.TC001_VerifyCheckoutFlow">
         <methods>
           <include name="tearDown"/>
-          <include name="verify_LoginCredentials" invocation-numbers="7"/>
           <include name="setUp"/>
+          <include name="verifyCompleteCheckoutFlow"/>
         </methods>
-      </class> <!-- testCases.TC003_VerifyLoginFunctionality -->
+      </class> <!-- testCases.TC001_VerifyCheckoutFlow -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

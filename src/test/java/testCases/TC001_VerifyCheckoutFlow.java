@@ -59,16 +59,15 @@ public class TC001_VerifyCheckoutFlow extends BaseClass {
 			logger.info("Clicked on Continue");
 
 			// Step 5: Checkout Overview Page
-			CheckoutOverviewPage overviewpage = new CheckoutOverviewPage(driver);
+			CheckoutOverviewPage overviewPage = new CheckoutOverviewPage(driver);
 
-			double expectedTotal = inventoryPage.calculateTotalPrice();
-			double totalAfterTax = expectedTotal + expectedTotal * 0.08; // Tax is assumed as 8 percent as seen on the
-																			// web page
-			totalAfterTax = Math.round(totalAfterTax * 100.0) / 100.0; // To round of value to two decimal digits
-			expectedTotal = totalAfterTax;
-			double actualTotal = overviewpage.finalPrice(); // Get final price from overviewpage
-			Assert.assertEquals(actualTotal, expectedTotal, "Total price is not as expected");
-			overviewpage.clickOnFinish();
+			double expectedTotalPrice = cartPage.calculateTotalPrice();
+			String taxRate = p.getProperty("taxRate"); // Get tax rate from config.properties file
+			expectedTotalPrice = overviewPage.calculateTotalPriceAfterTax(expectedTotalPrice,Double.parseDouble(taxRate)); // Expected total price
+			
+			double actualTotalPrice = overviewPage.finalPrice(); // Get final price from overview page
+			Assert.assertEquals(actualTotalPrice, expectedTotalPrice, "Total price is not as expected");
+			overviewPage.clickOnFinish();
 
 			logger.info("Clicked on Finish");
 

@@ -20,13 +20,13 @@ public class LoginPage extends BasePage {
 	WebElement errorMessage;
 
 	// Method to enter username in login page
-	public void enterUsername(String username) throws Exception {
+	public void enterUsername(String username) {
 		txt_Login.clear();
 		txt_Login.sendKeys(username);
 	}
 
 	// Method to enter password in login page
-	public void enterPassword(String password) throws Exception {
+	public void enterPassword(String password) {
 		txt_Password.clear();
 		txt_Password.sendKeys(password);
 	}
@@ -37,7 +37,7 @@ public class LoginPage extends BasePage {
 	}
 
 	// Method to enter username, password and then login
-	public void enterCredentialsAndLogin(String username, String password) throws Exception {
+	public void enterCredentialsAndLogin(String username, String password) {
 		enterUsername(username);
 		enterPassword(password);
 		clickLogin();
@@ -60,6 +60,7 @@ public class LoginPage extends BasePage {
 		}
 	}
 
+	// Method to get current Page URL
 	public String getCurrentPageURL() {
 		try {
 			return (driver.getCurrentUrl());

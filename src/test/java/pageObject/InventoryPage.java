@@ -36,18 +36,7 @@ public class InventoryPage extends BasePage {
 	public void addProductsToCart(int numberOfProducts) {
 		for (int index = 0; index < numberOfProducts; index++) {
 			addProducts.get(index).click();
-			
 		}
-	}
-
-	// Method to calculate total price
-	public double calculateTotalPrice() {
-		double total = 0.0;
-		for (WebElement priceElement : productPrice) {
-			String priceText = priceElement.getText().replace("$", "");
-			total += Double.parseDouble(priceText);
-		}
-		return total;
 	}
 
 	// Method to get all product names
@@ -74,7 +63,7 @@ public class InventoryPage extends BasePage {
 	}
 
 	// Method to sort products by Name Z-A
-	public void sortByNameZA() {
+	public void clickOnSortByNameZA() {
 		Select select = new Select(sortProductDropdown);
 		select.selectByVisibleText("Name (Z to A)");
 	}

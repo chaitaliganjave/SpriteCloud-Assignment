@@ -1,41 +1,60 @@
-13:46:30.392 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-13:46:30.395 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-13:46:30.405 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-13:46:30.406 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-13:46:30.407 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-13:46:30.418 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-13:46:30.419 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-13:46:30.419 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-13:46:30.430 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-13:46:30.430 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-13:46:30.431 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-13:46:30.442 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-13:46:30.443 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-13:46:30.443 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-13:46:30.460 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-13:46:30.460 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-13:46:30.461 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-13:46:30.474 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-13:46:30.475 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-13:46:30.475 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-13:46:30.487 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-13:46:30.487 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-13:46:30.488 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-13:46:30.499 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-13:46:30.500 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-13:46:30.500 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-13:46:30.511 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
-13:46:30.947 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
-13:46:30.959 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate page url
-13:46:30.959 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Login successfull
-13:46:30.959 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validation successful
-13:46:31.057 [main] INFO  testCases.TC003_VerifyLoginFunctionality - clicked on Open Menu
-13:46:31.273 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Successfully Logout
-13:46:31.273 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
-13:46:31.276 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
-13:46:31.657 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
-13:46:31.700 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate error message
-13:46:31.700 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
-13:46:31.703 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
-13:46:32.038 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
-13:46:32.057 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate error message
+15:24:54.267 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Information entered on Checkout Your Information Page
+15:24:54.356 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Continue
+15:24:54.740 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Finish
+15:24:54.809 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Checkout Complete Page
+15:24:54.809 [main] INFO  testCases.TC001_VerifyCheckoutFlow - ** TC001_VerifyCheckoutFlow Finished **
+15:31:27.856 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\hp\eclipse-workspace\SpriteCloudAssignment\master.xml"
+15:31:28.159 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hp\eclipse-workspace\SpriteCloudAssignment\master.xml
+
+15:31:31.016 [main] INFO  testCases.TC001_VerifyCheckoutFlow - ** TC001_VerifyCheckoutFlow Started **
+15:31:31.563 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Credentials entered
+15:31:31.775 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Products added in cart
+15:31:31.853 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on cart
+15:31:31.952 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on checkout
+15:31:32.253 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Information entered on Checkout Your Information Page
+15:31:32.380 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Continue
+15:31:32.787 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Finish
+15:31:32.862 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Checkout Complete Page
+15:31:32.863 [main] INFO  testCases.TC001_VerifyCheckoutFlow - ** TC001_VerifyCheckoutFlow Finished **
+15:32:25.897 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\hp\eclipse-workspace\SpriteCloudAssignment\master.xml"
+15:32:26.177 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hp\eclipse-workspace\SpriteCloudAssignment\master.xml
+
+15:32:29.289 [main] INFO  testCases.TC001_VerifyCheckoutFlow - ** TC001_VerifyCheckoutFlow Started **
+15:32:29.754 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Credentials entered
+15:32:30.035 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Products added in cart
+15:32:30.124 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on cart
+15:32:30.224 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on checkout
+15:32:30.501 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Information entered on Checkout Your Information Page
+15:32:30.575 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Continue
+15:32:30.840 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Finish
+15:32:30.879 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Checkout Complete Page
+15:32:30.879 [main] INFO  testCases.TC001_VerifyCheckoutFlow - ** TC001_VerifyCheckoutFlow Finished **
+15:40:01.997 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\hp\eclipse-workspace\SpriteCloudAssignment\master.xml"
+15:40:02.288 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hp\eclipse-workspace\SpriteCloudAssignment\master.xml
+
+15:40:05.122 [main] INFO  testCases.TC001_VerifyCheckoutFlow - ** TC001_VerifyCheckoutFlow Started **
+15:40:05.636 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Credentials entered
+15:40:05.876 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Products added in cart
+15:40:05.970 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on cart
+15:40:06.152 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on checkout
+15:40:06.425 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Information entered on Checkout Your Information Page
+15:40:06.509 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Continue
+15:40:06.897 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Finish
+15:40:06.955 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Checkout Complete Page
+15:40:06.955 [main] INFO  testCases.TC001_VerifyCheckoutFlow - ** TC001_VerifyCheckoutFlow Finished **
+15:40:32.779 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\hp\eclipse-workspace\SpriteCloudAssignment\master.xml"
+15:40:33.047 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hp\eclipse-workspace\SpriteCloudAssignment\master.xml
+
+15:40:35.880 [main] INFO  testCases.TC001_VerifyCheckoutFlow - ** TC001_VerifyCheckoutFlow Started **
+15:40:36.322 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Credentials entered
+15:40:36.509 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Products added in cart
+15:40:36.600 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on cart
+15:40:36.698 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on checkout
+15:40:36.954 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Information entered on Checkout Your Information Page
+15:40:37.059 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Continue
+15:40:37.328 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Finish
+15:40:37.367 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Checkout Complete Page

@@ -33,6 +33,7 @@ public class ExtentReportManager implements ITestListener {
 																								// Format
 			reportName = "Test-Report-" + timeStamp + ".html";
 			String reportPath = System.getProperty("user.dir") + "\\reports\\" + reportName;
+
 			// Initialize ExtentSparkReporter
 			ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
 
@@ -40,7 +41,6 @@ public class ExtentReportManager implements ITestListener {
 			sparkReporter.config().setDocumentTitle("Automation Test Report");
 			sparkReporter.config().setReportName("SauceDemo Test Report");
 			sparkReporter.config().setTheme(Theme.STANDARD);
-			// sparkReporter.config().setEncoding("utf-8");
 
 			// Initialize ExtentReports
 			extent = new ExtentReports();

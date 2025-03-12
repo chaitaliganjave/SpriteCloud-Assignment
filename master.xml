@@ -4,20 +4,13 @@
 	<listeners>
 		<listener class-name="utilities.ExtentReportManager" />
 	</listeners>
-
 	<test thread-count="5" name="Test">
 		<parameter name="os" value="windows" />
 		<parameter name="browser" value="chrome" />
-
 		<classes>
-
 			<class name="testCases.TC001_VerifyCheckoutFlow" />
 			<class name="testCases.TC002_VerifySortedProducts" />
 			<class name="testCases.TC003_VerifyLoginFunctionality" />
-
-
 		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test>
+</suite>

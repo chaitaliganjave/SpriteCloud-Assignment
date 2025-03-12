@@ -23,6 +23,13 @@ public class CheckoutOverviewPage extends BasePage {
 		return Double.parseDouble(priceText);
 	}
 
+	// Method to calculate the total price after tax
+	public Double calculateTotalPriceAfterTax(double totalPrice, double taxRate) {
+		double totalPriceAfterTax = totalPrice + (totalPrice * taxRate);
+		totalPriceAfterTax = Math.round(totalPriceAfterTax * 100.0) / 100.0; // To round of value to two decimal digits
+		return totalPriceAfterTax;
+	}
+
 	// Method to click on finish button
 	public void clickOnFinish() {
 		Actions action = new Actions(driver);

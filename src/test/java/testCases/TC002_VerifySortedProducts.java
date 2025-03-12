@@ -28,7 +28,7 @@ public class TC002_VerifySortedProducts extends BaseClass {
 				Assert.fail();
 			}
 
-			inventoryPage.sortByNameZA(); // Sort products by Name Z-A
+			inventoryPage.clickOnSortByNameZA(); // Sort products by Name Z-A
 			logger.info("Sorting done");
 			// Validate that the sorting is correct
 			Assert.assertTrue(inventoryPage.isSortedByNameZA(), "Items are not sorted correctly by Name Z-A");
