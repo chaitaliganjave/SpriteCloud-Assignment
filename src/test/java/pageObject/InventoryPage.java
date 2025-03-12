@@ -36,6 +36,7 @@ public class InventoryPage extends BasePage {
 	public void addProductsToCart(int numberOfProducts) {
 		for (int index = 0; index < numberOfProducts; index++) {
 			addProducts.get(index).click();
+			
 		}
 	}
 

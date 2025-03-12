@@ -1,26 +1,38 @@
-23:32:15.246 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
-23:32:15.254 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
-23:32:16.018 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
-23:32:16.058 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate error message
-23:32:16.058 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
-23:32:16.082 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
-23:32:21.793 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
-23:32:21.807 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate page url
-23:32:21.807 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Login successfull
-23:32:21.933 [main] INFO  testCases.TC003_VerifyLoginFunctionality - clicked on Open Menu
-23:32:22.106 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Successfully Logout
-23:32:22.106 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validation successful
-23:32:22.106 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
-23:32:22.113 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
-23:32:22.769 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
-23:32:22.829 [main] INFO  testCases.TC003_VerifyLoginFunctionality - actualResultEpic sadface: Password is required
-23:32:22.829 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate error message
-23:32:22.829 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
-23:32:22.840 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
-23:32:23.584 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
-23:32:23.598 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate page url
-23:32:23.598 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Login successfull
-23:32:23.786 [main] INFO  testCases.TC003_VerifyLoginFunctionality - clicked on Open Menu
-23:32:23.984 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Successfully Logout
-23:32:23.984 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validation successful
-23:32:23.984 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+13:46:32.057 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+13:46:32.063 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
+13:46:32.357 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
+13:46:32.365 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate page url
+13:46:32.365 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Login successfull
+13:46:32.365 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validation successful
+13:46:32.410 [main] INFO  testCases.TC003_VerifyLoginFunctionality - clicked on Open Menu
+13:46:32.652 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Successfully Logout
+13:46:32.652 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+13:46:32.660 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
+13:46:32.972 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
+13:46:32.992 [main] INFO  testCases.TC003_VerifyLoginFunctionality - actualResultEpic sadface: Username is required
+13:46:32.992 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate error message
+13:46:32.992 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+13:46:32.995 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
+13:46:33.252 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
+13:46:33.267 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate error message
+13:46:33.268 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+13:46:33.271 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
+13:46:38.556 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
+13:46:38.570 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate page url
+13:46:38.570 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Login successfull
+13:46:38.571 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validation successful
+13:46:38.650 [main] INFO  testCases.TC003_VerifyLoginFunctionality - clicked on Open Menu
+13:46:38.882 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Successfully Logout
+13:46:38.882 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+13:46:38.882 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
+13:46:39.299 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
+13:46:39.336 [main] INFO  testCases.TC003_VerifyLoginFunctionality - actualResultEpic sadface: Password is required
+13:46:39.336 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate error message
+13:46:39.457 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
+13:46:40.005 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
+13:46:40.019 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate page url
+13:46:40.019 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Login successfull
+13:46:40.019 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validation successful
+13:46:40.100 [main] INFO  testCases.TC003_VerifyLoginFunctionality - clicked on Open Menu
+13:46:40.336 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Successfully Logout
+13:46:40.336 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **

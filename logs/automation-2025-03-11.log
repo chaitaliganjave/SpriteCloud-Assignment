@@ -1,45 +1,26 @@
-23:32:11.530 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-23:32:11.533 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-23:32:11.546 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-23:32:11.547 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-23:32:11.547 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-23:32:11.559 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-23:32:11.559 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-23:32:11.560 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-23:32:11.571 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-23:32:11.571 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-23:32:11.572 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-23:32:11.584 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-23:32:11.585 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-23:32:11.585 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-23:32:11.596 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-23:32:11.597 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-23:32:11.597 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-23:32:11.630 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
-23:32:12.324 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
-23:32:12.350 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate page url
-23:32:12.351 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Login successfull
-23:32:12.458 [main] INFO  testCases.TC003_VerifyLoginFunctionality - clicked on Open Menu
-23:32:12.715 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Successfully Logout
-23:32:12.722 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validation successful
-23:32:12.722 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
-23:32:12.739 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
-23:32:13.120 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
-23:32:13.159 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate error message
-23:32:13.160 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
-23:32:13.163 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
-23:32:13.725 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
-23:32:13.750 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate error message
-23:32:13.750 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
-23:32:13.771 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
-23:32:14.119 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
-23:32:14.133 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate page url
-23:32:14.133 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Login successfull
-23:32:14.225 [main] INFO  testCases.TC003_VerifyLoginFunctionality - clicked on Open Menu
-23:32:14.497 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Successfully Logout
-23:32:14.497 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validation successful
-23:32:14.497 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
-23:32:14.500 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
-23:32:15.196 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
-23:32:15.244 [main] INFO  testCases.TC003_VerifyLoginFunctionality - actualResultEpic sadface: Username is required
-23:32:15.244 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate error message
+23:32:15.246 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+23:32:15.254 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
+23:32:16.018 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
+23:32:16.058 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate error message
+23:32:16.058 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+23:32:16.082 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
+23:32:21.793 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
+23:32:21.807 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate page url
+23:32:21.807 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Login successfull
+23:32:21.933 [main] INFO  testCases.TC003_VerifyLoginFunctionality - clicked on Open Menu
+23:32:22.106 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Successfully Logout
+23:32:22.106 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validation successful
+23:32:22.106 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+23:32:22.113 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
+23:32:22.769 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
+23:32:22.829 [main] INFO  testCases.TC003_VerifyLoginFunctionality - actualResultEpic sadface: Password is required
+23:32:22.829 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate error message
+23:32:22.829 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+23:32:22.840 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
+23:32:23.584 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
+23:32:23.598 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate page url
+23:32:23.598 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Login successfull
+23:32:23.786 [main] INFO  testCases.TC003_VerifyLoginFunctionality - clicked on Open Menu
+23:32:23.984 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Successfully Logout
+23:32:23.984 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validation successful
+23:32:23.984 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **

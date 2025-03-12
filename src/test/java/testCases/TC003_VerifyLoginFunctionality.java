@@ -23,12 +23,13 @@ public class TC003_VerifyLoginFunctionality extends BaseClass {
 				String actualUrl = loginPage.getCurrentPageURL();
 				logger.info("Validate page url");
 				logger.info("Login successfull");
+				Assert.assertEquals(actualUrl, result);
+				logger.info("Validation successful");
 				ip.clickOpenMenu();
 				logger.info("clicked on Open Menu");
 				ip.clickLogout();
 				logger.info("Successfully Logout");
-				Assert.assertEquals(actualUrl, result);
-				logger.info("Validation successful");
+				
 			} else if (type.equalsIgnoreCase("invalid")) {
 				String actualResult = loginPage.getErrorMessage(result);
 				logger.info("Validate error message");
