@@ -37,5 +37,12 @@ The automated UI tests cover the following scenarios:
 
  3. TC003_VerifyLoginFunctionality:
 
-    - The test case uses a data provider (DataProviders.class) and an excel utility (ExcelUtility.Class) to supply test data from an excel sheet.
+    - The test case uses a data provider (DataProviders.class) and an excel utility (ExcelUtility.Class) to fetch test data from an excel sheet.
+    - The test case contains following scenarios
+         1. Valid Login - Validate that the user is redirected to the correct page.
+         2. Invalid Login - Validate that the correct error message is displayed.
+         3. Invalid Username - Validate that the correct error message is displayed.
+         4. Invalid Password - Validate that the correct error message is displayed.
+         5. Blank Username - Validate that the correct error message is displayed.
+         6. Blank Password - Validate that the correct error message is displayed.
 
