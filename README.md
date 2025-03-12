@@ -11,7 +11,7 @@ The automated UI tests cover the following scenarios:
 
 ### Test Cases Implemented
 
-1. TC001_VerifyCheckoutFlow
+1. TC001_VerifyCheckoutFlow:
    -Steps:
    1. Login with valid credentials.
    2. Check if login is successful, inventory page is visible, add 2 products to cart, and click on cart.
