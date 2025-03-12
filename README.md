@@ -51,3 +51,17 @@ The automated UI tests cover the following scenarios:
 
 An automatic test report is generated when test excecution is completed. ExtentReports is used to generate test reports. Test reports are available in "reports" folder. And screenshots of failed test cases are stored in "screenshots" folder. (Referred Youtube videos for this)
 
+
+## API Testing Solution
+
+### Test Cases Implemented
+
+1. Retrieve a List of Users:
+
+   - Endpoint: /api/users?page=2
+   - Method: GET
+   - Description: This test case retrieves a list of users from the second page.
+   - Validation:
+         1. Verify that the response status code is 200 OK.
+         2. Ensure that the response contains a list of users.
+         3. Validate that the per_page and total fields in the response match the expected values.
