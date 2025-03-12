@@ -9,4 +9,14 @@ The automated UI tests cover the following scenarios:
  2. Sorting items by name (Z-A) and validating the sorting order.
  3. Failed login validation.
 
+### Test Cases Implemented
+
+1. TC001_VerifyCheckoutFlow
+   -Steps:
+   1. Login with valid credentials.
+   2. Check if login is successful, inventory page is visible, add 2 products to cart, and click on cart.
+   3. Click on checkout.
+   4. Enter information on "Checkout-Your Information Page" and click on continue.
+   5. Validate that the final price is same as the expected final price. Click on Finish.
+   7. Check if "Checkout-Complete Page" is visible.
 
