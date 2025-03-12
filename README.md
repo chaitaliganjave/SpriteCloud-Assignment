@@ -62,6 +62,7 @@ An automatic test report is generated when test excecution is completed. ExtentR
    - Method: GET
    - Description: This test case retrieves a list of users from the second page.
    - Validation:
-         1. Verify that the response status code is 200 OK.
-         2. Ensure that the response contains a list of users.
-         3. Validate that the per_page and total fields in the response match the expected values.
+      
+     1. Verify that the response status code is 200 OK.
+     2. Ensure that the response contains a list of users.
+     3. Validate that the per_page and total fields in the response match the expected values.
