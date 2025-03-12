@@ -7,7 +7,7 @@ This project contains two folders. The UI Testing folder contains the automated 
 The automated UI tests cover the following scenarios:
  1. Full checkout process that contains at least two items, validating the final price.
  2. Sorting items by name (Z-A) and validating the sorting order.
- 3. Failed login validation.
+ 3. Failed login validation. (And successful login validation as well)
 
 ### Test Cases Implemented
 
@@ -33,3 +33,9 @@ The automated UI tests cover the following scenarios:
        2. Check if login is successful and inventory page is visible.
        3. Click on Sort products by Name Z-A.
        4. Validate that the sorting is correct.
+
+
+ 3. TC003_VerifyLoginFunctionality:
+
+    - The test case uses a data provider (DataProviders.class) and an excel utility (ExcelUtility.Class) to supply test data from an excel sheet.
+
