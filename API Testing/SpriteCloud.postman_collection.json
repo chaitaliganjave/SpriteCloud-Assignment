@@ -1,0 +1,499 @@
+{
+	"info": {
+		"_postman_id": "af679d00-0710-470b-8fb7-f9ef0d942516",
+		"name": "SpriteCloud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43034242"
+	},
+	"item": [
+		{
+			"name": "List Users",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"if(!pm.globals.get(\"base_URL\")){\r",
+							"pm.globals.set(\"base_URL\", \"https://reqres.in\");\r",
+							"}\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"// parse response\r",
+							"let jsonData = pm.response.json();\r",
+							"\r",
+							"//check status code\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//check response time\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"\r",
+							"// validate if user list exists\r",
+							"pm.test(\"User list is not empty\", function () {\r",
+							"    pm.expect(jsonData.data).to.be.an('array').that.is.not.empty;\r",
+							"});\r",
+							"\r",
+							"// Store user ID for chaining\r",
+							"if (jsonData.data.length > 0) {\r",
+							"    let userId = jsonData.data[0].id;\r",
+							"    pm.environment.set(\"user_id\",userId);\r",
+							"    console.log(\"Stored user_id: \" +userId );\r",
+							"} else {\r",
+							"    console.error(\"No users found to store.\");\r",
+							"}\r",
+							"\r",
+							"// Validate the number of users on the current page\r",
+							"pm.test(\"Validate number of users on current page\", function () {\r",
+							"    pm.expect(jsonData.data.length).to.eql(jsonData.per_page);\r",
+							"    console.log(\"users present in page : \"+jsonData.per_page)\r",
+							"});\r",
+							"\r",
+							"\r",
+							"//Creating JSON schema for id and email fields of the response body\r",
+							"const schema = {\r",
+							"    \"type\": \"object\",\r",
+							"    \"properties\": {\r",
+							"        \"data\": {\r",
+							"            \"type\": \"array\",\r",
+							"            \"items\": {\r",
+							"                \"type\": \"object\",\r",
+							"                \"properties\": {\r",
+							"                    \"id\": { \"type\": \"number\" },\r",
+							"                    \"email\": { \"type\": \"string\", \"format\": \"email\" }\r",
+							"                },\r",
+							"                \"required\": [\"id\", \"email\", \"first_name\"]\r",
+							"            }\r",
+							"        }\r",
+							"    },\r",
+							"    \"required\": [\"data\"]\r",
+							"};\r",
+							"\r",
+							"// Validate the response against the schema\r",
+							"pm.test(\"Response matches the simplified JSON schema\", function () {\r",
+							"    pm.response.to.have.jsonSchema(schema);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_URL}}/api/users?page=2",
+					"host": [
+						"{{base_URL}}"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Succesful Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Check status code is 200\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Check token is generetd in respons\r",
+							"let jsonData = pm.response.json();\r",
+							"pm.test(\"Token is present\", function () {\r",
+							"    console.log(\"Token : \"+jsonData.token );\r",
+							"    pm.expect(jsonData.token).to.exist;\r",
+							"});\r",
+							"\r",
+							"// Store token for future requests\r",
+							"pm.environment.set(\"auth_token\", jsonData.token);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"if(!pm.globals.get(\"base_URL\")){\r",
+							"pm.globals.set(\"base_URL\", \"https://reqres.in\");\r",
+							"}\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"eve.holt@reqres.in\",\r\n    \"password\": \"cityslicka\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_URL}}/api/login",
+					"host": [
+						"{{base_URL}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Details",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"if(!pm.globals.get(\"base_URL\")){\r",
+							"pm.globals.set(\"base_URL\", \"https://reqres.in\");\r",
+							"}\r",
+							"\r",
+							"//check user id is present\r",
+							"if (!pm.environment.get(\"user_id\")) {\r",
+							"    throw new Error(\"User ID is missing! Ensure the previous request ran successfully.\");\r",
+							"}"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//check response time is 200\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Check provided details are updated in response body\r",
+							"\r",
+							"pm.test(\"Details are updated\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.name).to.eql(\"Chaitali\");\r",
+							"    console.log(\"name: \"+jsonData.name);\r",
+							"\r",
+							"    pm.expect(jsonData.job).to.eql(\"Software tester\");\r",
+							"    console.log(\"job: \"+jsonData.job);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Chaitali\",\r\n    \"job\": \"Software tester\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_URL}}/api/users/{{user_id}}",
+					"host": [
+						"{{base_URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"{{user_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"if(!pm.globals.get(\"base_URL\")){\r",
+							"pm.globals.set(\"base_URL\", \"https://reqres.in\");\r",
+							"}\r",
+							"\r",
+							"//check user id is present\r",
+							"if (!pm.environment.get(\"user_id\")) {\r",
+							"    throw new Error(\"User ID is missing! Ensure the previous request ran successfully.\");\r",
+							"}"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 204 (No Content)\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_URL}}/api/users/{{user_id}}",
+					"host": [
+						"{{base_URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"{{user_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid Login",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"if(!pm.globals.get(\"base_URL\")){\r",
+							"pm.globals.set(\"base_URL\", \"https://reqres.in\");\r",
+							"}"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"eve.holt@reqres.in\",\r\n    \"password\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_URL}}/api/login",
+					"host": [
+						"{{base_URL}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid User",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"if(!pm.globals.get(\"base_URL\")){\r",
+							"pm.globals.set(\"base_URL\", \"https://reqres.in\");\r",
+							"}"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_URL}}/api/users/a",
+					"host": [
+						"{{base_URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delayed Response",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Set delay value in environment variable\r",
+							"pm.environment.set(\"delay_time\",\"3\");\r",
+							"\r",
+							"\r",
+							"// Validate delay is within the allowed range (0-3 seconds)\r",
+							"var delay = parseInt(pm.environment.get(\"delay_time\"));\r",
+							"if (delay < 0 || delay > 3) {\r",
+							"    throw new Error(\"Delay value must be between 0 and 3 seconds.\");\r",
+							"}"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// log response time\r",
+							"let responseTime = pm.response.responseTime;\r",
+							"console.log(\"Response Time (ms):\", responseTime);\r",
+							"\r",
+							"\r",
+							"// Validate response time is less than 3 seconds\r",
+							"pm.test(\"Response time is less than 3 seconds\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(3000);\r",
+							"});\r",
+							"\r",
+							"// Validate status code is 200\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// validate data is exists in response body\r",
+							"pm.test(\"User list is not empty\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.data).to.be.an('array').that.is.not.empty;\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_URL}}/api/users?delay={{delay_time}}",
+					"host": [
+						"{{base_URL}}"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "delay",
+							"value": "{{delay_time}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
