@@ -27,8 +27,8 @@ public class BaseClass {
 	public Logger logger; // For Log4j
 	public Properties p; // to access commonly used data from config.properties file
 
+	@BeforeClass(groups = {"End to end","Sanity","DataDriven","Master"})
 	@Parameters({ "os", "browser" })
-	@BeforeClass
 	public void setUp(String os, String browser) throws IOException {
 
 		logger = LogManager.getLogger(this.getClass()); // For Log4j
@@ -53,13 +53,13 @@ public class BaseClass {
 		p.load(file);
 
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
 		driver.get(p.getProperty("url")); // reading url from properties file
 		driver.manage().window().maximize();
 	}
 
-	@AfterClass
+	@AfterClass(groups = {"End to end","Sanity","DataDriven","Master"})
 	public void tearDown() {
 		driver.quit();
 	}

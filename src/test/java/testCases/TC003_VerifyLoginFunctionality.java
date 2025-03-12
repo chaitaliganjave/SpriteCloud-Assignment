@@ -10,7 +10,7 @@ import utilities.DataProviders;
 
 public class TC003_VerifyLoginFunctionality extends BaseClass {
 
-	@Test(dataProvider = "Logindata", dataProviderClass = DataProviders.class)
+	@Test(dataProvider = "Logindata", dataProviderClass = DataProviders.class,groups = {"DataDriven","Master"} )
 	public void verify_LoginCredentials(String type, String username, String password, String result) throws Exception {
 		logger.info("** TC003_VerifyLoginFunctionality Started **");
 		try {

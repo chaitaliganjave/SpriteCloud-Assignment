@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>10/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 12 14:37:49 CET 2025</td>
+<td>Started on:</td><td>Wed Mar 12 17:37:02 CET 2025</td>
 </tr>
-<tr><td>Total time:</td><td>25 seconds (25682 ms)</td>
+<tr><td>Total time:</td><td>42 seconds (42106 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,18 +77,20 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testCases.TC001_VerifyCheckoutFlow.verifyCompleteCheckoutFlow()'><b>verifyCompleteCheckoutFlow</b><br>Test class: testCases.TC001_VerifyCheckoutFlow</td>
-<td><div><pre>java.lang.AssertionError: null
-	at testCases.TC001_VerifyCheckoutFlow.verifyCompleteCheckoutFlow(TC001_VerifyCheckoutFlow.java:84)
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testCases.TC001_VerifyCheckoutFlow.verifyCompleteCheckoutFlow(TC001_VerifyCheckoutFlow.java:32)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace973760715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace973760715'><pre>java.lang.AssertionError: null
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace197680583", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace197680583'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at testCases.TC001_VerifyCheckoutFlow.verifyCompleteCheckoutFlow(TC001_VerifyCheckoutFlow.java:84)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testCases.TC001_VerifyCheckoutFlow.verifyCompleteCheckoutFlow(TC001_VerifyCheckoutFlow.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -112,7 +114,7 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
 </pre></div></td>
-<td>0</td>
+<td>20</td>
 <td>testCases.TC001_VerifyCheckoutFlow@2552f2cb</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -124,7 +126,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC003_VerifyLoginFunctionality.verify_LoginCredentials()'><b>verify_LoginCredentials</b><br>Test class: testCases.TC003_VerifyLoginFunctionality<br>Parameters: Invalid, locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out.</td>
+<td title='testCases.TC002_VerifySortedProducts.sortProductsbyZtoA()'><b>sortProductsbyZtoA</b><br>Test class: testCases.TC002_VerifySortedProducts</td>
+<td></td>
+<td>0</td>
+<td>testCases.TC002_VerifySortedProducts@35fe2125</td></tr>
+<tr>
+<td title='testCases.TC003_VerifyLoginFunctionality.verify_LoginCredentials()'><b>verify_LoginCredentials</b><br>Test class: testCases.TC003_VerifyLoginFunctionality<br>Parameters: Valid, standard_user, secret_sauce, https://www.saucedemo.com/inventory.html</td>
 <td></td>
 <td>0</td>
 <td>testCases.TC003_VerifyLoginFunctionality@94f6bfb</td></tr>
@@ -134,22 +141,27 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>testCases.TC003_VerifyLoginFunctionality@94f6bfb</td></tr>
 <tr>
-<td title='testCases.TC003_VerifyLoginFunctionality.verify_LoginCredentials()'><b>verify_LoginCredentials</b><br>Test class: testCases.TC003_VerifyLoginFunctionality<br>Parameters: BlankUsername, , secret_sauce, Epic sadface: Username is required</td>
-<td></td>
-<td>0</td>
-<td>testCases.TC003_VerifyLoginFunctionality@94f6bfb</td></tr>
-<tr>
 <td title='testCases.TC003_VerifyLoginFunctionality.verify_LoginCredentials()'><b>verify_LoginCredentials</b><br>Test class: testCases.TC003_VerifyLoginFunctionality<br>Parameters: Valid, error_user, secret_sauce, https://www.saucedemo.com/inventory.html</td>
 <td></td>
 <td>0</td>
 <td>testCases.TC003_VerifyLoginFunctionality@94f6bfb</td></tr>
 <tr>
-<td title='testCases.TC002_VerifySortedProducts.sortProductsbyZtoA()'><b>sortProductsbyZtoA</b><br>Test class: testCases.TC002_VerifySortedProducts</td>
+<td title='testCases.TC003_VerifyLoginFunctionality.verify_LoginCredentials()'><b>verify_LoginCredentials</b><br>Test class: testCases.TC003_VerifyLoginFunctionality<br>Parameters: Invalid, locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out.</td>
 <td></td>
 <td>0</td>
-<td>testCases.TC002_VerifySortedProducts@35fe2125</td></tr>
+<td>testCases.TC003_VerifyLoginFunctionality@94f6bfb</td></tr>
 <tr>
 <td title='testCases.TC003_VerifyLoginFunctionality.verify_LoginCredentials()'><b>verify_LoginCredentials</b><br>Test class: testCases.TC003_VerifyLoginFunctionality<br>Parameters: Valid, problem_user, secret_sauce, https://www.saucedemo.com/inventory.html</td>
+<td></td>
+<td>0</td>
+<td>testCases.TC003_VerifyLoginFunctionality@94f6bfb</td></tr>
+<tr>
+<td title='testCases.TC003_VerifyLoginFunctionality.verify_LoginCredentials()'><b>verify_LoginCredentials</b><br>Test class: testCases.TC003_VerifyLoginFunctionality<br>Parameters: InvalidPassword, standard_user, demopass, Epic sadface: Username and password do not match any user in this service</td>
+<td></td>
+<td>0</td>
+<td>testCases.TC003_VerifyLoginFunctionality@94f6bfb</td></tr>
+<tr>
+<td title='testCases.TC003_VerifyLoginFunctionality.verify_LoginCredentials()'><b>verify_LoginCredentials</b><br>Test class: testCases.TC003_VerifyLoginFunctionality<br>Parameters: BlankUsername, , secret_sauce, Epic sadface: Username is required</td>
 <td></td>
 <td>0</td>
 <td>testCases.TC003_VerifyLoginFunctionality@94f6bfb</td></tr>
@@ -160,16 +172,6 @@ function toggleAllBoxes() {
 <td>testCases.TC003_VerifyLoginFunctionality@94f6bfb</td></tr>
 <tr>
 <td title='testCases.TC003_VerifyLoginFunctionality.verify_LoginCredentials()'><b>verify_LoginCredentials</b><br>Test class: testCases.TC003_VerifyLoginFunctionality<br>Parameters: BlankPassword, visual_user, , Epic sadface: Password is required</td>
-<td></td>
-<td>0</td>
-<td>testCases.TC003_VerifyLoginFunctionality@94f6bfb</td></tr>
-<tr>
-<td title='testCases.TC003_VerifyLoginFunctionality.verify_LoginCredentials()'><b>verify_LoginCredentials</b><br>Test class: testCases.TC003_VerifyLoginFunctionality<br>Parameters: Valid, standard_user, secret_sauce, https://www.saucedemo.com/inventory.html</td>
-<td></td>
-<td>0</td>
-<td>testCases.TC003_VerifyLoginFunctionality@94f6bfb</td></tr>
-<tr>
-<td title='testCases.TC003_VerifyLoginFunctionality.verify_LoginCredentials()'><b>verify_LoginCredentials</b><br>Test class: testCases.TC003_VerifyLoginFunctionality<br>Parameters: InvalidPassword, standard_user, demopass, Epic sadface: Username and password do not match any user in this service</td>
 <td></td>
 <td>0</td>
 <td>testCases.TC003_VerifyLoginFunctionality@94f6bfb</td></tr>

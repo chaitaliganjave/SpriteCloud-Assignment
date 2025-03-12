@@ -8,7 +8,7 @@ import pageObject.LoginPage;
 import testBase.BaseClass;
 
 public class TC002_VerifySortedProducts extends BaseClass {
-	@Test
+	@Test(groups = {"Sanity","Master" })
 	public void sortProductsbyZtoA() throws Exception {
 		try {
 			logger.info("** TC002_VerifySortedProducts Started **");

@@ -14,7 +14,7 @@ import testBase.BaseClass;
 
 public class TC001_VerifyCheckoutFlow extends BaseClass {
 
-	@Test
+	@Test(groups = {"End to end","Master"} )
 	public void verifyCompleteCheckoutFlow() throws Exception {
 		try {
 			logger.info("** TC001_VerifyCheckoutFlow Started **");

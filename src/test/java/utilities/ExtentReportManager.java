@@ -17,6 +17,7 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 public class ExtentReportManager implements ITestListener {
 	public ExtentReports extent; // populate common info of the report
@@ -54,14 +55,20 @@ public class ExtentReportManager implements ITestListener {
 
 			String browser = textContext.getCurrentXmlTest().getParameter("browser");
 			extent.setSystemInfo("Browser", browser);
-
+			
+			//Add included groups from xml
+			List<String> includeGroups=textContext.getCurrentXmlTest().getIncludedGroups();
+			if(!includeGroups.isEmpty()) { //if group are present in xml then add groups in extent report
+				extent.setSystemInfo("Groups", includeGroups.toString());
+			}
 			extent.setSystemInfo("User", System.getProperty("user.name"));
 		}
 		// return extent;
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		test = extent.createTest(result.getTestClass().getName());
+		test = extent.createTest(result.getTestClass().getName()); //to get the name of class
+		test.assignCategory(result.getMethod().getGroups()); //to display groups in report
 		test.log(Status.PASS, result.getName() + " got successfully executed ");
 	}
 

@@ -1,60 +1,50 @@
-15:24:54.267 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Information entered on Checkout Your Information Page
-15:24:54.356 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Continue
-15:24:54.740 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Finish
-15:24:54.809 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Checkout Complete Page
-15:24:54.809 [main] INFO  testCases.TC001_VerifyCheckoutFlow - ** TC001_VerifyCheckoutFlow Finished **
-15:31:27.856 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\hp\eclipse-workspace\SpriteCloudAssignment\master.xml"
-15:31:28.159 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\hp\eclipse-workspace\SpriteCloudAssignment\master.xml
-
-15:31:31.016 [main] INFO  testCases.TC001_VerifyCheckoutFlow - ** TC001_VerifyCheckoutFlow Started **
-15:31:31.563 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Credentials entered
-15:31:31.775 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Products added in cart
-15:31:31.853 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on cart
-15:31:31.952 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on checkout
-15:31:32.253 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Information entered on Checkout Your Information Page
-15:31:32.380 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Continue
-15:31:32.787 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Finish
-15:31:32.862 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Checkout Complete Page
-15:31:32.863 [main] INFO  testCases.TC001_VerifyCheckoutFlow - ** TC001_VerifyCheckoutFlow Finished **
-15:32:25.897 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\hp\eclipse-workspace\SpriteCloudAssignment\master.xml"
-15:32:26.177 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\hp\eclipse-workspace\SpriteCloudAssignment\master.xml
-
-15:32:29.289 [main] INFO  testCases.TC001_VerifyCheckoutFlow - ** TC001_VerifyCheckoutFlow Started **
-15:32:29.754 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Credentials entered
-15:32:30.035 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Products added in cart
-15:32:30.124 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on cart
-15:32:30.224 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on checkout
-15:32:30.501 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Information entered on Checkout Your Information Page
-15:32:30.575 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Continue
-15:32:30.840 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Finish
-15:32:30.879 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Checkout Complete Page
-15:32:30.879 [main] INFO  testCases.TC001_VerifyCheckoutFlow - ** TC001_VerifyCheckoutFlow Finished **
-15:40:01.997 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\hp\eclipse-workspace\SpriteCloudAssignment\master.xml"
-15:40:02.288 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\hp\eclipse-workspace\SpriteCloudAssignment\master.xml
-
-15:40:05.122 [main] INFO  testCases.TC001_VerifyCheckoutFlow - ** TC001_VerifyCheckoutFlow Started **
-15:40:05.636 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Credentials entered
-15:40:05.876 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Products added in cart
-15:40:05.970 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on cart
-15:40:06.152 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on checkout
-15:40:06.425 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Information entered on Checkout Your Information Page
-15:40:06.509 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Continue
-15:40:06.897 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Finish
-15:40:06.955 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Checkout Complete Page
-15:40:06.955 [main] INFO  testCases.TC001_VerifyCheckoutFlow - ** TC001_VerifyCheckoutFlow Finished **
-15:40:32.779 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\hp\eclipse-workspace\SpriteCloudAssignment\master.xml"
-15:40:33.047 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\hp\eclipse-workspace\SpriteCloudAssignment\master.xml
-
-15:40:35.880 [main] INFO  testCases.TC001_VerifyCheckoutFlow - ** TC001_VerifyCheckoutFlow Started **
-15:40:36.322 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Credentials entered
-15:40:36.509 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Products added in cart
-15:40:36.600 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on cart
-15:40:36.698 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on checkout
-15:40:36.954 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Information entered on Checkout Your Information Page
-15:40:37.059 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Continue
-15:40:37.328 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Clicked on Finish
-15:40:37.367 [main] INFO  testCases.TC001_VerifyCheckoutFlow - Checkout Complete Page
+17:44:11.422 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Logout successful
+17:44:11.425 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+17:44:11.431 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
+17:44:11.767 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
+17:44:11.792 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate error message
+17:44:11.793 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Error message validation successful
+17:44:11.793 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+17:44:11.796 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
+17:44:12.147 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
+17:44:12.167 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate error message
+17:44:12.168 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Error message validation successful
+17:44:12.168 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+17:44:12.171 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
+17:44:12.541 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
+17:44:12.552 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate page url
+17:44:12.552 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Page url validation successful
+17:44:12.552 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Login successful
+17:44:12.613 [main] INFO  testCases.TC003_VerifyLoginFunctionality - clicked on Open Menu
+17:44:12.797 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Logout successful
+17:44:12.797 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+17:44:12.802 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
+17:44:13.026 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
+17:44:13.053 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate error message
+17:44:13.053 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Error message validation successful
+17:44:13.053 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+17:44:13.056 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
+17:44:13.325 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
+17:44:13.343 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate error message
+17:44:13.344 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Error message validation successful
+17:44:13.344 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+17:44:13.345 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
+17:44:18.689 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
+17:44:18.700 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate page url
+17:44:18.701 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Page url validation successful
+17:44:18.701 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Login successful
+17:44:18.837 [main] INFO  testCases.TC003_VerifyLoginFunctionality - clicked on Open Menu
+17:44:19.022 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Logout successful
+17:44:19.022 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+17:44:19.029 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
+17:44:19.442 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
+17:44:19.462 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate error message
+17:44:19.462 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Error message validation successful
+17:44:19.462 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC001_VerifyLoginFunctionality Finished **
+17:44:19.482 [main] INFO  testCases.TC003_VerifyLoginFunctionality - ** TC003_VerifyLoginFunctionality Started **
+17:44:19.929 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Credentials entered
+17:44:19.943 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Validate page url
+17:44:19.943 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Page url validation successful
+17:44:19.943 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Login successful
+17:44:20.032 [main] INFO  testCases.TC003_VerifyLoginFunctionality - clicked on Open Menu
+17:44:20.227 [main] INFO  testCases.TC003_VerifyLoginFunctionality - Logout successful
